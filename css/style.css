@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+body {
+    color: rgba(36, 41, 46, 1);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    padding: 0 4%;
+}
+
+#header {
+    max-width: 960px;
+    justify-content: space-between;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+
+
+.page-title a {
+    display: flex;
+}
+
+#header ul {
+    display: flex;
+    margin: 0 -15px;
+}
+
+#header li {
+    margin: 0 15px;
+}
+
+#header a{
+    color: rgba(36, 41, 46, 1);
+    font-size: 0.875em;
+}
+
+#instagram-icon {
+    display: flex;
+}
+#instagram-icon a {
+    display: flex;
+}
+
+.main-bg {
+    margin-bottom: 81px;
+}
+
+.main-bg img {
+    height: 420px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 64.6px;
+}
+
+.name, .information {
+    margin-bottom: 30px;
+}
+
+.about-contents {
+    font-size: 14.4px;
+}
+
+#works h2 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#news h2 {
+    text-align: center;
+    margin: 131px 0 64px;
+}
+
+
+.news-list {
+    font-size: 14.4px;
+}
+
+
+.news-list-item-first {
+    display: flex;
+    line-height: 51px;
+    border-top: solid 1px rgba(200, 200, 200, 1);
+    border-bottom: solid 1px rgba(200, 200, 200, 1);
+}
+.news-list-item {
+    display: flex;
+    line-height: 51px;
+    border-bottom: solid 1px rgba(200, 200, 200, 1);
+}
+
+time {
+    margin: 0 83px 0 15px;
+
+}
+
+#contact div{
+    font-size: 14.4px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 131px;
+    margin-bottom: 64px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    border: solid 1px rgba(200, 200, 200, 1);
+    width: 723px;
+
+}
+
+input[type="text"], 
+input[type="email"] {
+    height: 43px;
+}
+
+textarea {
+    height: 160px;
+}
+
+.button {
+    color: rgba(255, 255, 255, 1);
+    border: solid 1px black;
+    line-height: 53px;
+    padding: 0 85px;
+    background: rgba(36, 41, 46, 1);
+    margin-top: 20px;
+}
+
+.button-space {
+    justify-content: center;
+}
+
+footer {
+    background: rgba(36, 41, 46, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    height: 35px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+

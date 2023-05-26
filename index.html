@@ -5,16 +5,17 @@
         <title>My Work - Profile</title>
         <meta name="description" content="デザイン、コーディング、イラストレーションなど、様々な分野でのスキルと創造性を表現しています。">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="href=https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="icon" href="images/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <header id="header" class="wrapper">
+        <header id="header">
             <h1 class="page-title">
-                <a href="/index.html">
-                    <img src="/images/logo.svg" alt="My Work">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="My Work">
                 </a>
             </h1>
             <nav>
@@ -23,7 +24,7 @@
                     <li><a href="#works">Works</a></li>
                     <li><a href="#news">News</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li id="instagram-icon"><a href="https://www.instagram.com/"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
                 </ul>
             </nav>
         </header>
@@ -53,7 +54,7 @@
 
             <div class="wrapper" id="works">
                 <h2>Works</h2>
-                <div class="grid-items">
+                <div class="grid-container">
                     <div class="item">
                         <img src="images/works1.png" alt="works1">
                     </div>
@@ -77,31 +78,33 @@
 
             <div class="wrapper" id="news">
                 <h2>News</h2>
-                <div class="news-contents">
-                    <ul>
-                        <li>2020.XX.XX</li>
-                        <li>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</li>
-                    </ul>
-                    <ul>
-                        <li>2020.XX.XX</li>
-                        <li>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</li>
-                    </ul>
-                    <ul>
-                        <li>2019.XX.XX</li>
-                        <li>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</li>
-                    </ul>
-                    <ul>
-                        <li>2019.XX.XX</li>
-                        <li>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</li>
-                    </ul>
-                    <ul>
-                        <li>2019.XX.XX</li>
-                        <li>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</li>
+                    <ul class="news-list">
+                        <li class="news-list-item-first">
+                            <time>2020.XX.XX</time>
+                            <p>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</p>
+                        </li>
+                        <li class="news-list-item">
+                            <time>2020.XX.XX</time>
+                            <p>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</p>
+                        </li>
+                        <li class="news-list-item">
+                            <time>2019.XX.XX</time>
+                            <p>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="news-list-item">
+                            <time>2019.XX.XX</time>
+                            <p>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</p>
+                        </li>
+                        <li class="news-list-item">
+                            <time>2019.XX.XX</time>
+                            <p>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="wrapper" id="contact">
+                <h2>Contact</h2>
                 <form action="">
                     <div>
                         <label for="name">NAME</label>
@@ -115,7 +118,9 @@
                         <label for="message">MESSAGE</label>
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <input type="submit" class="button" value="送信">
+                    <div class="button-space">
+                        <input type="submit" class="button" value="送信">
+                    </div>
                 </form>
             </div>
 
