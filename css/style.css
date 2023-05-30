@@ -66,6 +66,7 @@ img {
 
 .main-bg img {
     height: 420px;
+    object-fit: cover;
 }
 
 #about h2 {
@@ -86,7 +87,7 @@ img {
     margin-bottom: 64px;
 }
 
-.grid-container {
+#works ul {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
@@ -116,8 +117,14 @@ img {
 }
 
 time {
-    margin: 0 83px 0 15px;
+    width: 20%;
+    padding-left: 15px;
 
+}
+
+#news p {
+    width: 80%;
+    padding-left: 15px;
 }
 
 #contact div{
@@ -209,7 +216,7 @@ footer {
     }
 
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        grid-template-columns: 100%;
     }
 
     #works h2 {
@@ -240,7 +247,7 @@ footer {
     input[type="text"], 
     input[type="email"], 
     textarea {
-        width: 345px;
+        width: 100%;
     }
 
     .button-space {
