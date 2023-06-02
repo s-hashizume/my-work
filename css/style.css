@@ -224,6 +224,13 @@ footer {
         margin-bottom: 39px;
     }
 
+    #works ul {
+        display: block;
+    }
+
+    #works li {
+        margin-bottom: 23px;
+    }
     .news-list-item, .news-list-item-first {
         display: block;
         line-height: 21px;
@@ -232,7 +239,7 @@ footer {
     }
 
     #news p {
-        margin-left: 15px;
+
     }
 
     #contact h2 {
@@ -258,6 +265,5 @@ footer {
     .button {
         text-align: center;
     }
-
 
 }
