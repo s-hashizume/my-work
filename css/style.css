@@ -211,8 +211,12 @@ footer {
         margin: 0 10px;
     }
 
+    .main-bg {
+
+    }
     .main-bg img {
-        object-fit: cover;
+
+        object-position: 74.5% 0;
     }
 
     .grid-container {
