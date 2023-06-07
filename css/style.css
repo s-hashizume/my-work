@@ -233,7 +233,7 @@ footer {
     #works li {
         margin-bottom: 23px;
     }
-    .news-list-item, .news-list-item-first {
+    .news-list-item {
         display: block;
         line-height: 21px;
         padding: 15.6px 0 13.4px;
